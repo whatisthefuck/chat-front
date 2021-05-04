@@ -29,9 +29,9 @@ jobs:
       - name: Deploy
         uses: appleboy/ssh-action@master
         with: 
-          host: ${{ secrets.SERVERIP }}
+          host: ${{ SERVERIP }}
           username: root
-          password: ${{ secrets.PASSWORD }}
+          password: ${{ PASSWORD }}
           port: 22
           script: |
             systemctl start nginx
