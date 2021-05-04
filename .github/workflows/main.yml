@@ -35,3 +35,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: 22
           script: systemctl start nginx
+          debug: true
